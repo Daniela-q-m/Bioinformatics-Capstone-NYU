@@ -1,6 +1,3 @@
-#running agFusion to create input file. pVACfuse accepts a output directory from AGFusion as input. The code below is 
-#annotating the output from the STAR-Fusion caller.
-#__________________________________________________________
 #!/bin/bash
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
@@ -37,3 +34,8 @@ MHCflurry MHCnuggetsI MHCnuggetsII NNalign NetMHC PickPocket SMM SMMPMBEC SMMali
 /scratch/dq2033-share/pvac_fuse_results \ #directory for results
 -e1 8,9,10 \ #flag for Length of MHC Class I subpeptides(neopeptides)
 -e2 15 #flag for Length of MHC Class II subpeptides(neopeptides)
+
+#summarry of this code:
+#running agFusion to create input file. pVACfuse accepts a output directory from AGFusion as input. The code below is 
+#annotating the output from the STAR-Fusion caller.
+#__________________________________________________________
