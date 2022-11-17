@@ -17,11 +17,12 @@ fi
 VERSION=`cat VERSION.txt`
 
 # run STAR-Fusion
-cd ../ && singularity exec --overlay /scratch/dq2033-share ${CTAT_GENOME_LIB}:/ctat_genome_lib Docker/star-fusion_1.10.0.sif\ #was .smig
-/scratch/dq2033-sharesrc/STAR-Fusion/STAR-Fusion\
---left_fq /scratch/dq2033-share/reads_1.fq.gz\
---right_fq /scratch/dq2033-share/reads_2.fq.gz\
---genome_lib_dir /ctat_genome_lib\
--O /scratch/dq2033-share/StarFusionOut\
---FusionInspector inspect --examine_coding_effect --denovo_reconstruct #not sure if this is denovo..
+singularity exec -e --overlay /scratch/dq2033-share -B /scratch/dq2033-share/tutorial_star_fusion \
+        star-fusion-v$version.simg \ #need to update to .smig.........
+        STAR-Fusion \
+        --left_fq /scratch/dq2033-share/reads_1.fq.gz\
+        --right_fq /scratch/dq2033-share/reads_2.fq.gz\
+        --genome_lib_dir /scratch/dq2033-share/tutorial_star_fusion\
+        -O /scratch/dq2033-share/StarFusionOut\
+        --FusionInspector inspect --examine_coding_effect --denovo_reconstruct #not sure if this is denovo..
 
