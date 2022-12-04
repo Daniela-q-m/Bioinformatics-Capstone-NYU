@@ -26,3 +26,4 @@ singularity exec -e --overlay /scratch/dq2033-share -B /scratch/dq2033-share/tut
         -O /scratch/dq2033-share/StarFusionOut\
         --FusionInspector inspect --examine_coding_effect --denovo_reconstruct #not sure if this is denovo..
 
+# written by Charlee Cobb 11/20/2022
