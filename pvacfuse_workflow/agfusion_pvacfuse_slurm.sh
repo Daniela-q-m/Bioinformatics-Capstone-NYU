@@ -39,3 +39,4 @@ MHCflurry MHCnuggetsI MHCnuggetsII NNalign NetMHC PickPocket SMM SMMPMBEC SMMali
 #running agFusion to create input file. pVACfuse accepts a output directory from AGFusion as input. The code below is 
 #annotating the output from the STAR-Fusion caller.
 #__________________________________________________________
+#written by Charlee Cobb - 11/07/2022
