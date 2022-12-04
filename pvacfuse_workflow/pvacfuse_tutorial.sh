@@ -16,7 +16,7 @@ source /ext3/env.sh
 which python
 which pvactools
 
-pvacfuse run \
+./home/cac9995/bin/pvactools pvacfuse run \
 /scratch/dq2033-share/pVACtools/pvactools/tools/pvacfuse/example_data/agfusion/ \
 Test \
 HLA-A*02:01,HLA-B*35:01,DRB1*11:01 \
