@@ -12,3 +12,5 @@ module load
 STAR-Fusion  --left_fq reads_1.fq \
              --right_fq reads_2.fq \
              --output_dir star_fusion_outdir/star-fusion.fusion_predictions.tsv
+
+# written by Charlee Cobb - 11/07/2022
