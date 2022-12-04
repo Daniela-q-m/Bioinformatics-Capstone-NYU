@@ -5,7 +5,8 @@
 #SBATCH --time=10:00:00
 #SBATCH --mem=4GB
 #SBATCH --job-name=test
-module purge
+
+module purge #wriiten by Charlee Cobb - 10/06/2022
 singularity exec \
         --overlay /scratch/dq2033-share/INTEGRATE-Neo/overlay-15GB-500K.ext3:ro \
         /scratch/work/public/singularity/ubuntu-20.04.4.sif \
@@ -19,5 +20,3 @@ python /ext3/bin/integrate-neo.py\
         -f /ext3/INTEGRATE-Neo/Examples/example1/fusions.bedpe\
         -r /ext3/bin/Homo_sapiens.GRCh38.dna_sm.primary_assembly.fa\
         -g /ext3/bin/Homo_sapiens.GRCh38.86.genePred -k"
-
-#wriiten by Charlee Cobb - 10/06/2022
