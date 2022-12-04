@@ -5,7 +5,8 @@
 #SBATCH --time=10:00:00
 #SBATCH --mem=4GB
 #SBATCH --job-name=test
-module purge
+
+module purge #wriiten by Charlee Cobb - 10/06/2022
 singularity exec \
         --overlay /scratch/dq2033-share/INTEGRATE-Neo/overlay-15GB-500K.ext3:ro \
         /scratch/work/public/singularity/ubuntu-20.04.4.sif \
