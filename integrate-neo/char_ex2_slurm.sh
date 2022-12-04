@@ -19,3 +19,5 @@ python /ext3/bin/integrate-neo.py\
 	-f /ext3/INTEGRATE-Neo/Examples/example2/fusions.bedpe\
 	-r /ext3/bin/Homo_sapiens.GRCh38.dna_sm.primary_assembly.fa\
 	-g /ext3/bin/Homo_sapiens.GRCh38.86.genePred -k"
+
+#written by Charlee Cobb 10/28/2022
