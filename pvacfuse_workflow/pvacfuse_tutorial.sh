@@ -24,3 +24,5 @@ MHCflurry MHCnuggetsI MHCnuggetsII NNalign NetMHC PickPocket SMM SMMPMBEC SMMali
 /scratch/dq2033-share/pVacfuse_out \
 -e1 8,9,10 \
 -e2 15"
+
+#written by Charlee Cobb - 11/12/2022
