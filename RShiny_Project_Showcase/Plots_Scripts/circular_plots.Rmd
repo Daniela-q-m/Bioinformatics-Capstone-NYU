@@ -1,0 +1,27 @@
+---
+title: "Circular Plots"
+output: html_notebook
+---
+
+The purpose of this script is to outline how to make circular plots to show otput data from PVAC Tools to include in the RShiny App.
+```{r}
+install.packages('Circlize')
+```
+
+```{r}
+library(Circlize)
+```
+
+
+```{r}
+circos.genomicTrackPlotRegion(
+    data = NULL,
+    ylim = NULL,
+    stack = FALSE,
+    numeric.column = NULL,
+    jitter = 0,
+    panel.fun = function(region, value, ...) {NULL},
+    ...)
+```
+
+
